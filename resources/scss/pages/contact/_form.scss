@@ -1,0 +1,49 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+.form{
+    p{
+        font-size: 1.4rem;
+        color: v.$dark_gray;
+        margin: 2rem 0 0 0;
+    }
+
+    legend{
+        font-size: 2rem;
+        color: v.$dark_gray;
+    }
+
+    label{
+        display: block;
+        font-weight: v.$bold;
+        text-transform: uppercase;
+    }
+
+    input:not([type="submit"]), 
+    select,
+    textarea{
+        width: 100%;
+        padding: 1rem;
+        display: block;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        border: 1px solid v.$gray;
+        background-color: v.$white;
+    }
+
+    textarea{
+        height: 20rem;
+    }
+
+    .form-contact{
+        display: flex;
+        max-width: 30rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    input[type="radio"]{
+        margin: 0;
+        width: auto;
+    }
+}

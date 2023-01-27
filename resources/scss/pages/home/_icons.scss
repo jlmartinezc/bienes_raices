@@ -1,0 +1,31 @@
+@use '../../base/variables' as v;
+@use '../../base/mixins' as m;
+
+@include m.tablet{
+    .icons-about{
+        @include m.gap(3, 1fr, 3rem);
+    }
+}
+
+.icon{
+    text-align: justify;
+    padding: 3rem 0 2rem 0;
+    border-bottom: .3rem solid darken(v.$gray, 5);
+    
+    &:last-of-type {
+        border-bottom: none;
+    }
+    
+    @include m.tablet{
+        padding: 0;
+        border-bottom: none;
+    }
+
+    img{ 
+        height: 10rem;
+    }
+
+    h3{
+        text-transform: uppercase;
+    }
+}

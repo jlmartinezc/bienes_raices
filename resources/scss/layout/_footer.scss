@@ -1,0 +1,17 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.footer{
+    margin-bottom: 0;
+    padding: calc(v.$separation / 2) 0;
+    background-color: v.$dark_gray;
+    
+    .contianer-footer{
+        padding-top: calc(v.$separation / 2);
+    }
+
+    .copyright{
+        color: v.$white;
+        text-align: center;
+    }
+}
