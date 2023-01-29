@@ -5,7 +5,7 @@
                 <img src="/assets/img/logo.svg" alt="logo de bienes raices">
             </a>
 
-            <?php include '../app/views/partials/navegation.php' ?>
+            <?php include '../App/Views/partials/navegation.php' ?>
         </div> <!-- .bar -->
 
         <?php 

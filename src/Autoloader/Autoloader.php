@@ -25,6 +25,7 @@ class Autoloader {
     public function loader(String $class):Void{
         try {
             $class = trim($class, '/');
+            $class = str_replace('\\', '/', $class);
             $root = $this->config['path']['root'];
             $file = sprintf('%s/%s.php', $root, $class);
 
